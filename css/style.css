@@ -23,7 +23,6 @@ a:hover{
 a:active{
     color: hsl(0, 50%, 60%)
 }
-
 h1{
     font-family: 'DM Serif Display', serif;
     font-weight: 400;
@@ -48,7 +47,7 @@ h4{
     font-family: 'DM Serif Display', serif;
     font-weight: 400;
     font-style: italic;
-    font-size: calc(12px + 2vmax)
+    font-size: calc(12px + 2vmax);
 }
 p{
     font-family: 'Poppins', sans-serif;
@@ -57,19 +56,16 @@ p{
     font-size: calc(8px + 0.5vmax);
     line-height: 1.4em;
 }
-
 em{
     font-style: italic;
 }
 u{
     text-decoration: underline;
 }
-
 ul{
     display: flex;
-    gap: 1.2em;
+    gap: calc(.5em + 1vw);
 }
-
 li a{
     text-transform: uppercase;
 }
@@ -92,8 +88,8 @@ li a{
     padding-bottom: 2em;
 }
 .padsides{
-    padding-left: 2em;
-    padding-right: 2em;
+    padding-left: calc(.5em + 2vw);
+    padding-right: calc(.3em + 2.5vw);
 }
 .title{
     min-width: 365px;
@@ -105,7 +101,6 @@ li a{
 .imgcard{
     max-width: 100%; display: block;
 }
-
 .container{
     max-width: 100rem;
 }
@@ -140,14 +135,11 @@ li a{
 }
 .card__img{
     width: 100%;
-    /*aspect-ratio: 1 / 1;*/
     object-fit: cover;
 }
-
 .square{
     aspect-ratio: 1 / 1;;
 }
-
 .anim:hover{
     transition: .2s;
     opacity: .9;
@@ -177,25 +169,14 @@ li a{
     border-radius: 1em;
     padding: 1em 1.5em;
 }
-
 .button:hover{
     transition: .2s;
     background-color: hsl(0, 50%, 60%);
 }
-
 .button:active{
     background-color: #fff;
 }
-
-@media (min-width: 60em){
-.card.featured{
-    grid-row: span 2;
-    grid-column: span 2;
-}
-.card.featured.card__img{
-    aspect-ratio: 1 / 1;
-}
-.card.featured.card__title{
-    font-size: 4rem;
-}
+.contact__info{
+    display: block;
+    margin-bottom: 1.5em;
 }
